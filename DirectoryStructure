@@ -1,0 +1,32 @@
+Sample ways of how to structure directories: 
+
+your-repo/
+├── your-repo.Rproj
+├── README.md
+├── renv.lock
+├── renv/
+├── .gitignore
+├── src/                     # shared R functions used across projects
+│   ├── R/
+│   └── README.md
+├── projects/
+│   ├── 01-project-name/
+│   │   ├── README.md
+│   │   ├── data/
+│   │   │   ├── raw/         # if you keep raw locally, see notes below
+│   │   │   ├── interim/
+│   │   │   └── processed/
+│   │   ├── docs/                      # protocols, QA/QC notes, metadata
+│   │   ├── notebooks/                 # optional exploratory
+│   │   ├── scripts/
+│   │   │   ├── 00_import.R
+│   │   │   ├── 01_qc.R
+│   │   │   ├── 02_process.R
+│   │   │   ├── 03_analyze.R
+│   │   │   └── 04_figures_tables.R
+│   │   |── outputs/
+│   │   |   ├── figures/
+│   │   |   └── tables/
+│   │   └── manuscript/                # optional (or keep manuscripts elsewhere)
+│   └── 02-project-name/ ...
+└── reports/                 # optional: cross-project synthesis docs
