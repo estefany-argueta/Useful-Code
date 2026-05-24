@@ -1,0 +1,10 @@
+# Moving in and out of directories like in Commandline
+
+Similar to pwd
+getwd() #Print working directory.
+
+Similar to cd
+setwd("path") #Change directory to a specific path.
+
+Similar to ls
+dir() or list.files() #List contents of the current directory.
