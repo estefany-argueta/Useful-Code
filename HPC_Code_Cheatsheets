@@ -1,3 +1,7 @@
 # Look into a script and check for text where it has ggsave and either pdf and png 
 # Essentially look into a script for this text
 grep -n "ggsave\|pdf\|png\|device" "$SCRIPT"
+
+# Counting how many lines in a document 
+N=$(wc -l < "$INTERVAL_FILE")
+echo "$N"
