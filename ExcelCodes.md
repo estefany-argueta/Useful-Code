@@ -1,8 +1,13 @@
 # Useful excel codes 
 
 XLookup: to match a sequence (or any text) and return its paired value (what's in the cell next to it)
-=XLOOKUP(TRUE,ISNUMBER(SEARCH(Sheet1!$A$2:$A$1000,V2)),Sheet1!$B$2:$B$1000,"")
+`=XLOOKUP(TRUE,ISNUMBER(SEARCH(Sheet1!$A$2:$A$1000,V2)),Sheet1!$B$2:$B$1000,"")`
 What this does:  formula checks whether the value in V2 appears anywhere in the list on Sheet1, column A.
 If Excel finds a match in Sheet1!A2:A1000, it returns the corresponding value from Sheet1!B2:B1000.
 
 This has been useful when I have a reference sheet with both forward sequences and their matching reverse complement sequences. 
+
+Another example of using xLookup:
+```
+=XLOOKUP($A5, bestrun_scratch!$B:$B, bestrun_scratch!$A:$H, "NOT FOUND", 0)
+```
