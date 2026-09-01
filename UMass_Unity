@@ -1,0 +1,13 @@
+Unity documentation here: https://unityhpc.org/documentation/ 
+
+# Request scratch space: 
+ws_allocate -r 3 (send email 3 days prior to expiration) "workspacename" 30 (days requested in scratch)
+
+# Create a shared scratch space: 
+ws_allocate -G "pi_pi-username" "name of shared space" 30 (days requested)
+
+# Extend time in scratch space: 
+ws_extend "workspace name" 30 (days requested)
+
+# Check space usage in the directory you are in
+du -h --max-depth=1 | sort -h
