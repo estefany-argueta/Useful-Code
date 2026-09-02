@@ -19,3 +19,17 @@ when you relaunch the project, you gain a new tab called build. You can then cli
 
 You can alos output  it 
 In terminal - type `quarto publish` - it tells you you can publish to quarto pub and link your account. 
+
+
+Bringing Quarto to Github: https://quarto.org/docs/output-formats/gfm.html
+---
+title: "My Project"
+format: gfm
+jupyter: python3
+---
+
+This is a GitHub README that has content dynamically generated from Python:
+    
+```{python}
+1 + 1
+```
