@@ -1,5 +1,0 @@
-# Reading in files:
-## File Path
-PAT <- file.path("../COLONY_2026", "BZFull_20260825.Paternity")
-## Read in file
-pat <- read.delim(PAT, sep = ",", header = TRUE) #commas used to seperate values
