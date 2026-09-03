@@ -27,8 +27,10 @@ write_csv(
   file = file.path(output_dir,"FDN_M008_FDN_M009_hatchlings.csv"),
   na = ""
 )
+```
 
 How to write multiple files at once:
+
 ```
 library(purrr)
 # Create an output directory
