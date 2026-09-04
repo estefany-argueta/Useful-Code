@@ -66,3 +66,20 @@ purrr::iwalk(
   }
 )
 ```
+### Tables for markdowns: 
+```
+knitr::kable(
+  head(maternity_review_display, 25),
+  col.names = c(
+    "Offspring",
+    "Best mother",
+    "Best probability",
+    "Candidate rank",
+    "Candidate mother",
+    "Candidate probability"
+  ),
+  align = c("l", "l", "r", "r", "l", "r")
+) |>  
+  kable_styling() %>%
+  scroll_box(height = "400px")
+```
